@@ -7,31 +7,34 @@ body{
     margin: 0 auto;
 }
 
-.font{
-    font-size: 15px;
-}
-
-.input{
-    width: 500px;
+#Resolve_div{
+    width: 800px;
     margin: 0 auto;
     display: flex;
 }
 
-input{ 
-    width: 500px;
-    height: 30px;
+#Resolve_source{
+    padding: 8px;
+    text-align: center;
+    flex: 0.8;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
-#jx{
-    background-color:darkgrey;
+#input{ 
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex: 4;
+    margin: 0 10px;
+}
+
+#Resolve{
+    border: 1px solid black;
     text-align: center;
     padding: 8px;
-    width: 50px;
     border-radius: 5px;
-}
-
-a{
+    flex: 0.4;
     text-decoration: none;
     color: black;
 }
@@ -41,7 +44,7 @@ a{
     margin: 20px auto;
 }
 
-iframe{
+#iframe{
     border: 2px solid;
     width: 100%;
     height: 600px;

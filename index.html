@@ -1,32 +1,109 @@
 <!DOCTYPE html>
 <html lang="zh" style="width: 100%;">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/index.css">
-    <script src="js/index.js"></script>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>BEGINNING</title>
+		<link rel="stylesheet" href="CSS/index.css">
+		<link rel="Shortcut Icon" type="image/x-icon" href="img/ico.png" />
+		<script src="js/index.js"></script>
+	</head>
 
-<body>
+	<body>
 
-    <div id="main">
-        <h1>解析网页</h1>
+		<div id="main">
+			<h2>BEGINNING</h2>
+			<h3>请输入要解析的网址</h3>
 
-        <div class="input">
-            <div class="font">解析源</div>
-            <input type="text" id="input">
-            <a href="iframe.html" id="jx" onclick="getinput()" target="iframe">解析</a>
-        </div>
+			<div id="Resolve_div">
+				<select id="Resolve_source">
+					<option value="https://z1.m1907.cn/?jx=" selected>1907</option>
+					<option value="https://vip.parwix.com:4433/player/?url=">通用高清接口①</option>
+					<option value="https://jsap.attakids.com/?url=">通用高清接口②</option>
+					<option value="https://j.zz22x.com/jx/?url=">备用高清接口①</option>
+					<option value="http://www.ikukk.com/?url=">备用高清接口②</option>
+					<option value="https://vip.parwix.com:4433/player/?url=">B站番剧接口①</option>
+					<option value="https://api.yueliangjx.com/?url=">B站番剧接口②</option>
+					<option value="https://www.1717yun.com/jx/ty.php?url=">芒果视频接口①</option>
+					<option value="https://www.5igen.com/dmplayer/player/?url=">待添加</option>
+					<option value="https://vip.bljiex.com/?v=">BL</option>
+					<option value="https://www.pangujiexi.cc/jiexi.php?url=">盘古</option>
+					<option value="https://www.mgtv.com.muguangys.com/jiexi.php?url=">暮光</option>
+					<option value="https://api.jhdyw.vip/?url=">江湖</option>
+					<option value="https://jx.7kjx.com/?url=">虾米</option>
+					<option value="http://tv.shuma.ink/?url=">数码小站</option>
+					<option value="http://jx.hao-zsj.cn/vip/?url=">乐喵</option>
+					<option value="https://www.2ajx.com/vip.php?url=">明日</option>
+					<option value="https://m3u8.4kya.com/?url=">恐怖鸭</option>
+					<option value="http://playx.top/?url=">618G</option>
+					<option value="http://jx.mmkv.cn/tv.php?url=">七哥</option>
+					<option value="https://jx.daidaitv.top:43810/?url=">蓝猫VIP</option>
+					<option value="https://www.8090.la/8090/?url=">8090</option>
+					<option value="http://www.1717yun.com/jx/ty.php?url=">1717</option>
+					<option value="http://player.maguays.cc/?url=">麻瓜</option>
+					<option value="http://okjx.cc/?url=">OK</option>
+					<option value="http://qimihe.com/?url=">奇米</option>
+					<option value="https://jx.ap2p.cn/?url=">思云1</option>
+					<option value="https://api.ap2p.cn/?url=">思云2</option>
+					<option value="https://jx.youyitv.com/?url=">最牛</option>
+					<option value="https://jx.youyitv.com/?url=">免费1</option>
+					<option value="https://api.ap2p.cn/?url=">免费2</option>
+					<option value="https://jiexi.msdv.cn/?url=">免费3</option>
+					<option value="https://m3u8.hjimg9.com/dp/?url=">花椒</option>
+					<option value="https://z1.m1907.cn/?jx=">纯净解析</option>
+					<option value="https://jsap.attakids.com/?url=">高速接口1</option>
+					<option value="https://vip.parwix.com:4433/player/?url=">B站解析1</option>
+					<option value="https://www.cuan.la/m3u8.php?url=">B站解析2</option>
+					<option value="https://api.leduotv.com/wp-api/ifr.php?isDp=1&vid=">乐多资源</option>
+					<option value="https://ckmov.ccyjjd.com/ckmov/?url=">ccyjjd</option>
+					<option value="https://jx.m3u8.tv/jiexi/?url=">M3U8</option>
+					<option value="https://api.myzch.cn/?url=">大白</option>
+					<option value="https://vip.laobandq.com/jiexi.php?url=">老板</option>
+					<option value="https://api.iopenyun.com:88/vip/?url=">云点播</option>
+					<option value="https://www.ckplayer.vip/jiexi/?url=">Ckplayer</option>
+					<option value="https://qd.hxys.tv/m3u8.php?url=">Mao解析</option>
+					<option value="https://www.ssamao.com/jx/?url=">SSAMAO</option>
+					<option value="https://jx.618g.com/?url=">618G</option>
+					<option value="https://www.ckmov.vip/api.php?url=">ckmov</option>
+					<option value="https://123.1dior.cn/?url=">迪奥</option>
+					<option value="https://jx.popo520.cn/jiexi/?url=">福星</option>
+					<option value="https://jx.rdhk.net/?v=">RDHK</option>
+					<option value="https://www.h8jx.com/jiexi.php?url=">H8</option>
+					<option value="https://api.jiexi.la/?url=">解析la</option>
+					<option value="https://jx.jiubojx.com/vip.php?url=">久播</option>
+					<option value="https://jx.youyitv.com/?url=">九八</option>
+					<option value="https://jx.hao-zsj.cn/vip/?url=">乐喵</option>
+					<option value="https://jiexi.janan.net/jiexi/?url=">MUTV</option>
+					<option value="https://jx.yingxiangbao.cn/vip.php?url=">明日</option>
+					<option value="https://jx.wzslw.cn/?url=">磨菇</option>
+					<option value="https://okjx.cc/?url=">OK</option>
+					<option value="https://jx.ivito.cn/?url=">维多</option>
+					<option value="https://www.kpezp.cn/jlexi.php?url=">小蒋</option>
+					<option value="https://jx.yaohuaxuan.com/?url=">小狼</option>
+					<option value="https://vip.kurumit3.top/?v=">智能</option>
+					<option value="https://vip.cjys.top/?url=">星驰</option>
+					<option value="http://60jx.com/?url=">星空</option>
+					<option value="https://api.yueliangjx.com/?url=">月亮</option>
+					<option value="https://go.yh0523.cn/y.cy?url=">0523</option>
+					<option value="https://jx.ergan.top/?url=">云端</option>
+					<option value="https://vip.jianjians.com/?url=">无名1</option>
+					<option value="http://api.u1o.net/?url=">无名2</option>
+					<option value="http://jx.quanmingjiexi.com/?url=">全民</option>
+					<option value="https://www.1717yun.com/jx/ty.php?url=">1717云</option>
+				</select>
 
-        <div id="iframe_div">
-            <iframe src="iframe.html" frameborder="0" allowfullscreen="true" name='iframe' id="iframe"></iframe>
-        </div>
-    </div>
+				<input type="text" id="input" placeholder="在这里粘贴要解析的视频链接。">
+				<a href="iframe.html" id="Resolve" onclick="getinput()" target="iframe">解析</a>
+			</div>
+
+			<div id="iframe_div">
+				<iframe src="iframe.html" frameborder="0" allowfullscreen="true" name='iframe' id="iframe"></iframe>
+			</div>
+		</div>
 
 
 
 
-</body>
+	</body>
 
 </html>
