@@ -9,7 +9,5 @@ function getinput() {
         var Resolve_source = document.getElementById("Resolve_source");
         var Parsing_url = Resolve_source.options[Resolve_source.selectedIndex].value;
         Resolve.href = ""+Parsing_url + input
-        var url = document.getElementById("jx");
-        url.href = "https://z1.m1907.cn/?jx=" + res;
     }
 }
